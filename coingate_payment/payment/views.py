@@ -8,7 +8,7 @@ import secrets
 from payment.models import Order
 from payment.forms import PriceForm
 
-sand_auth_token = '3CAtNg3ZUFdbVJKN6DFk2gy5eHVS1T8sP_Hybtbe'
+sand_auth_token = # your coingate sandbox authentication token
 product_categorical_prices = [100, 200, 300, 400, 500] # just populate with dummy data right now
 products_categorical = ['PRODUCT1', 'PRODUCT2', 'PRODUCT3', 'PRODUCT4', 'PRODUCT5']
 
