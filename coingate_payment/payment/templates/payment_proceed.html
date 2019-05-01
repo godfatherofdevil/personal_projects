@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>confirm your selection</h3>
+    <h2>product: {{ products }}<h2>
+    <h2>payment price: {{ payment_price }}</h2>
+    <div>
+        <form action="{% url 'payment_proceed' payment_price %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Confirm and Pay">
+        </form>
+    </div>
+{% endblock %}
