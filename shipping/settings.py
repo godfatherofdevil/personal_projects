@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'customer',
     'shippinguser',
+    'consultant',
     'rest_framework',
     'django_countries',
     'phonenumber_field',
