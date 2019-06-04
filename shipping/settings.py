@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_countries',
     'phonenumber_field',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'shipping.urls'
@@ -126,3 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'shippinguser.CustomUser'
+
+INTERNAL_IPS = ['127.0.0.1',]
