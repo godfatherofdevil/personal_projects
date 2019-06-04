@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Payment Successfull: </h1>
+    {% if status %}
+        <small> order_id: {{ api_result.id }}</small>
+        <small>for {{ api_result.price_amount }} {{ api_result.price_currency }}</small>
+        <small>current status: {{ api_result.status }}</small>
+    {% else %}
+        <small>current status: {{ api_result.status }}</small>
+    {% endif %}
+{% endblock %}

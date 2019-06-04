@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Payment Unsuccessful: </h1>
+    <small> order_id: {{ result.id }}</small>
+    <small>for {{ result.price_amount }} {{ result.price_currency }}</small>
+    <small>current status: {{ result.status }}</small>
+{% endblock %}
